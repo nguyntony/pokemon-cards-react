@@ -1,5 +1,7 @@
-const getFact = async ([...arr], setFacts) => {
-    const factPromise = fetch('https://api.pokemontcg.io/v1/cards?name=pichu&pageSize=2', {headers: {Accept: 'application/json'}})
+const getNewFact = async ([...arr], setFacts) => {
+    const id = Math.floor(Math.random() * 151)
+
+    const factPromise = fetch(`https://api.pokemontcg.io/v1/cards?nationalPokedexNumber=${id}&pageSize=1`, {headers: {Accept: 'application/json'}})
     const res = await factPromise
     const factData = await res.json()
     const facts = factData.cards.map(c => {
@@ -13,4 +15,4 @@ const getFact = async ([...arr], setFacts) => {
     setFacts([...arr, ...facts])
 }
 
-export default getFact
+export default getNewFact

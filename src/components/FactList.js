@@ -10,7 +10,7 @@ export default function FactList() {
         <div id="FactList">
             {
                 facts.map(f => (
-                    <Fact imgUrl={f.imgUrl} key={f.id} id={f.id}></Fact>
+                    <Fact imgUrl={f.imgUrl} key={f.id} id={f.id} name={f.abilityName} description={f.abilityDescription}></Fact>
                 ))
             }
         </div>

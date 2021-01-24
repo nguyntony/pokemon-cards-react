@@ -1,3 +1,3 @@
-# Movie React App
+# Pokemon Cards
 
-React app that explores context api and attempts to modularize things
+React app that implements context api, practices fetch, use effect and tries to modularize

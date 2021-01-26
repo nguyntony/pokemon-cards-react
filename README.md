@@ -35,3 +35,12 @@ Think of it like Parent = Provider
 You now have access to the state that has the data that you want, you can pass this down via props to whichever child that may need it. 
 
 Think of it like Child = Context
+
+
+# How to style react components
+I like to use sass and luckily there is a npm `node-sass`
+[Resource](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
+
+Using this package you are able to write your own css but using sass. The import line is very easy, you just go to the component that you wish to apply the styles to and you import it, this import statement acts similar to the html link statement. 
+
+You will have a styles dir in your src dir and you will not need to compile the sass file. 
